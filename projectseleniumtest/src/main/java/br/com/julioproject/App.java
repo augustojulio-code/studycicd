@@ -1,4 +1,4 @@
-package main.java.br.com.julioproject;
+package br.com.julioproject;
 
 /**
  * Hello world!
