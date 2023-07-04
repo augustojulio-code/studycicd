@@ -7,4 +7,8 @@ public class UserController {
     public void insert(User user) {
 
     }
+
+    public String hello() {
+        return "Olá ";
+    }
 }
