@@ -34,7 +34,7 @@ public class Actions {
 
         driver.get("file:///D:/Desenvolvimento/selenium_cicd/projectseleniumtest/index.html");
 
-        // driver.quit();
+        driver.quit();
 
         driver.findElement(By.name("nome")).sendKeys("Jose da Silva");
         driver.findElement(By.name("email")).sendKeys("Jose@gmail");
