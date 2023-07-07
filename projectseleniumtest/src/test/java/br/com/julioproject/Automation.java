@@ -22,5 +22,7 @@ public class Automation {
         driver.findElement(By.xpath(
                 "/html/body/div[6]/div/div[13]/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div/div/div/div/div[1]/a"))
                 .click();
+
+        driver.close();
     }
 }
