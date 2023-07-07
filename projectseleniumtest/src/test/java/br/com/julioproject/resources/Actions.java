@@ -1,13 +1,10 @@
 package br.com.julioproject.resources;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import br.com.julioproject.utils.DriverActions;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Actions {
 
@@ -30,11 +27,12 @@ public class Actions {
 
     @Test
     public void fillForm() {
-        driver = new ChromeDriver();
+        ChromeOptions opt = new ChromeOptions();
+        opt.addArguments("headless");
+
+        driver = new ChromeDriver(opt);
 
         driver.get("file:///D:/Desenvolvimento/selenium_cicd/projectseleniumtest/index.html");
-
-        driver.quit();
 
         driver.findElement(By.name("nome")).sendKeys("Jose da Silva");
         driver.findElement(By.name("email")).sendKeys("Jose@gmail");
@@ -42,6 +40,8 @@ public class Actions {
         driver.findElement(By.name("estado")).sendKeys("São paulo");
 
         driver.findElement(By.xpath("/html/body/form/input[5]")).click();
+
+        driver.quit();
 
     }
 
