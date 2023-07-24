@@ -16,12 +16,18 @@ public class Automation {
 
         driver.get("https://google.com");
 
-        driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea")).click();
-        driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea"))
-                .sendKeys("Redit", Keys.ENTER);
-        driver.findElement(By.xpath(
-                "/html/body/div[6]/div/div[13]/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div/div/div/div/div[1]/a"))
-                .click();
+        /*
+         * driver.findElement(By.xpath(
+         * "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea")).
+         * click();
+         * driver.findElement(By.xpath(
+         * "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea"))
+         * .sendKeys("Redit", Keys.ENTER);
+         * driver.findElement(By.xpath(
+         * "/html/body/div[6]/div/div[13]/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div/div/div/div/div[1]/a"
+         * ))
+         * .click();
+         */
 
         driver.close();
     }
