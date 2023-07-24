@@ -1,13 +1,18 @@
 package br.com.julioproject;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+
+import br.com.julioproject.resources.UserController;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest {
+    private UserController controller = new UserController();
+
     /**
      * Rigorous Test :-)
      */
@@ -18,11 +23,11 @@ public class AppTest {
 
     @Test
     public void testAbc() {
-        String test = "ok";
-        if (test.equalsIgnoreCase("ok")) {
-            assertTrue(true);
-        } else {
-            assertTrue(false);
+        try {
+            assertEquals("Olá", controller.hello().trim());
+        } catch (Exception e) {
+            System.out.println("" + e);
         }
+
     }
 }
