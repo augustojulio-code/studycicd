@@ -1,1 +1,3 @@
-## Projeto para estudos de Testes Automatizados Selenium e CI/CD
+## Study and test features project
+
+project for test some features
